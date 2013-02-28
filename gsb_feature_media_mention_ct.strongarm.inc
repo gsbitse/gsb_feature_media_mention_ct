@@ -22,10 +22,10 @@ function gsb_feature_media_mention_ct_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '17',
+          'weight' => '12',
         ),
         'workbench_access' => array(
-          'weight' => '18',
+          'weight' => '13',
         ),
       ),
       'display' => array(),

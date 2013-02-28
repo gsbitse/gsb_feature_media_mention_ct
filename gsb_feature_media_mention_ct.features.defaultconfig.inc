@@ -1,13 +1,24 @@
 <?php
 /**
  * @file
- * gsb_feature_media_mention_ct.field_group.inc
+ * gsb_feature_media_mention_ct.features.defaultconfig.inc
  */
 
 /**
- * Implements hook_field_group_info().
+ * Implements hook_defaultconfig_features().
  */
-function gsb_feature_media_mention_ct_field_group_info() {
+function gsb_feature_media_mention_ct_defaultconfig_features() {
+  return array(
+    'gsb_feature_media_mention_ct' => array(
+      'field_group_info' => 'field_group_info',
+    ),
+  );
+}
+
+/**
+ * Implements hook_defaultconfig_field_group_info().
+ */
+function gsb_feature_media_mention_ct_defaultconfig_field_group_info() {
   $export = array();
 
   $field_group = new stdClass();
