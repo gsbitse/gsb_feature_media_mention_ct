@@ -5,3 +5,19 @@
  */
 
 include_once 'gsb_feature_media_mention_ct.features.inc';
+
+/**
+ * Implements hook_form_FORM_ID_alter() for event media mention edit form.
+ */
+function gsb_feature_media_mention_ct_form_gsb_media_mention_node_form_alter(&$form, &$form_state) {
+
+    // set the editorial summary field to have a maxlength to 150 chars.
+
+    if (!empty($form['field_editorial_summary']['und'][0])) {
+      $language = $form['field_editorial_summary']['#language'];
+      $form['field_editorial_summary'][$language][0]['value']['#maxlength'] = '150';
+      $form['field_editorial_summary'][$language][0]['value']['#description'] = t('Editorial summary is limited to 150 characters.');
+    }
+  
+}
+
