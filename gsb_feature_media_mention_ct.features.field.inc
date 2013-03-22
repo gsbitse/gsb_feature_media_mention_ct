@@ -798,6 +798,10 @@ function gsb_feature_media_mention_ct_field_default_fields() {
         'active' => 1,
         'module' => 'text',
         'settings' => array(
+          'maxlength_js' => '150',
+          'maxlength_js_enforce' => 0,
+          'maxlength_js_label' => 'Editorial Summary is limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'maxlength_js_truncate_html' => 0,
           'rows' => '5',
         ),
         'type' => 'text_textarea',
