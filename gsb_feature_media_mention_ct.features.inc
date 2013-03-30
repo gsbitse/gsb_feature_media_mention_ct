@@ -23,10 +23,10 @@ function gsb_feature_media_mention_ct_ctools_plugin_api() {
  */
 function gsb_feature_media_mention_ct_node_info() {
   $items = array(
-    'gsb_media_mention' => array(
+    'media_mention' => array(
       'name' => t('Media Mention'),
       'base' => 'node_content',
-      'description' => t('The GSB Public Media Mention content type is used for media mentions on the GSB Public web site.'),
+      'description' => t('Add an excerpt of an article from another site.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',

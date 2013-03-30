@@ -13,15 +13,15 @@ function gsb_feature_media_mention_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_taxonomy|node|gsb_media_mention|form';
+  $field_group->identifier = 'group_taxonomy|node|media_mention|form';
   $field_group->group_name = 'group_taxonomy';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'gsb_media_mention';
+  $field_group->bundle = 'media_mention';
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Taxonomy',
-    'weight' => '11',
+    'weight' => '6',
     'children' => array(
       0 => 'field_business_insight_topic',
       1 => 'field_company_organization',
@@ -41,7 +41,7 @@ function gsb_feature_media_mention_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_taxonomy|node|gsb_media_mention|form'] = $field_group;
+  $export['group_taxonomy|node|media_mention|form'] = $field_group;
 
   return $export;
 }
