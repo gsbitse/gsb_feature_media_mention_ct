@@ -19,16 +19,16 @@ function gsb_feature_media_mention_ct_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '0',
+          'weight' => '1',
         ),
         'path' => array(
-          'weight' => '7',
+          'weight' => '6',
         ),
         'workbench_access' => array(
-          'weight' => '8',
+          'weight' => '0',
         ),
         'metatags' => array(
-          'weight' => '9',
+          'weight' => '7',
         ),
       ),
       'display' => array(),

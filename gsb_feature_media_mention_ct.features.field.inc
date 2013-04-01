@@ -14,7 +14,7 @@ function gsb_feature_media_mention_ct_field_default_fields() {
   $fields['node-media_mention-field_business_insight_topic'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '-1',
+      'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_business_insight_topic',
@@ -303,7 +303,7 @@ function gsb_feature_media_mention_ct_field_default_fields() {
           'year_range' => '-3:+3',
         ),
         'type' => 'date_popup',
-        'weight' => '1',
+        'weight' => '2',
       ),
       'workbench_access_field' => 0,
     ),
@@ -313,7 +313,7 @@ function gsb_feature_media_mention_ct_field_default_fields() {
   $fields['node-media_mention-field_discipline'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '-1',
+      'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_discipline',
@@ -485,7 +485,7 @@ function gsb_feature_media_mention_ct_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '4',
+        'weight' => '5',
       ),
       'workbench_access_field' => 0,
     ),
@@ -585,7 +585,7 @@ function gsb_feature_media_mention_ct_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '3',
+        'weight' => '4',
       ),
       'workbench_access_field' => 0,
     ),
@@ -595,7 +595,7 @@ function gsb_feature_media_mention_ct_field_default_fields() {
   $fields['node-media_mention-field_industry'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '-1',
+      'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_industry',
@@ -784,7 +784,7 @@ function gsb_feature_media_mention_ct_field_default_fields() {
           'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         ),
         'type' => 'link_field',
-        'weight' => '2',
+        'weight' => '3',
       ),
       'workbench_access_field' => 0,
     ),
@@ -794,7 +794,7 @@ function gsb_feature_media_mention_ct_field_default_fields() {
   $fields['node-media_mention-field_region'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '-1',
+      'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_region',
@@ -979,7 +979,7 @@ function gsb_feature_media_mention_ct_field_default_fields() {
   $fields['node-media_mention-field_target_audience'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '-1',
+      'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_target_audience',
