@@ -22,13 +22,13 @@ function gsb_feature_media_mention_ct_strongarm() {
           'weight' => '1',
         ),
         'path' => array(
-          'weight' => '6',
+          'weight' => '7',
         ),
         'workbench_access' => array(
           'weight' => '0',
         ),
         'metatags' => array(
-          'weight' => '7',
+          'weight' => '8',
         ),
       ),
       'display' => array(),
