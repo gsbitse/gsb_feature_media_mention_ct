@@ -51,13 +51,13 @@ function gsb_feature_media_mention_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'taxonomy',
           'settings' => array(
             'conditions' => array(),
           ),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 13,
+          'weight' => '8',
         ),
         'featured' => array(
           'label' => 'above',
@@ -87,17 +87,20 @@ function gsb_feature_media_mention_ct_field_default_fields() {
           'weight' => 0,
         ),
       ),
+      'ds_extras_field_template' => '',
       'entity_type' => 'node',
       'field_name' => 'field_business_insight_topic',
       'label' => 'Business Insight Topic',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
         'module' => 'hs_taxonomy',
-        'settings' => array(),
+        'settings' => array(
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        ),
         'type' => 'taxonomy_hs',
         'weight' => '13',
       ),
@@ -146,13 +149,13 @@ function gsb_feature_media_mention_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'taxonomy',
           'settings' => array(
             'conditions' => array(),
           ),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 14,
+          'weight' => '9',
         ),
         'featured' => array(
           'label' => 'above',
@@ -240,7 +243,7 @@ function gsb_feature_media_mention_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'date',
           'settings' => array(
             'conditions' => array(),
@@ -252,7 +255,7 @@ function gsb_feature_media_mention_ct_field_default_fields() {
             'show_repeat_rule' => 'show',
           ),
           'type' => 'date_default',
-          'weight' => 6,
+          'weight' => '2',
         ),
         'featured' => array(
           'label' => 'above',
@@ -360,13 +363,13 @@ function gsb_feature_media_mention_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'taxonomy',
           'settings' => array(
             'conditions' => array(),
           ),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 10,
+          'weight' => '5',
         ),
         'featured' => array(
           'label' => 'above',
@@ -448,13 +451,13 @@ function gsb_feature_media_mention_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'text',
           'settings' => array(
             'conditions' => array(),
           ),
           'type' => 'text_default',
-          'weight' => 9,
+          'weight' => '4',
         ),
         'featured' => array(
           'label' => 'above',
@@ -503,7 +506,7 @@ function gsb_feature_media_mention_ct_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '5',
+        'weight' => '6',
       ),
       'workbench_access_field' => 0,
     ),
@@ -545,7 +548,7 @@ function gsb_feature_media_mention_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'image',
           'settings' => array(
             'conditions' => array(),
@@ -553,7 +556,7 @@ function gsb_feature_media_mention_ct_field_default_fields() {
             'image_style' => '',
           ),
           'type' => 'image',
-          'weight' => 19,
+          'weight' => '0',
         ),
         'featured' => array(
           'label' => 'above',
@@ -604,7 +607,7 @@ function gsb_feature_media_mention_ct_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '4',
+        'weight' => '5',
       ),
       'workbench_access_field' => 0,
     ),
@@ -651,13 +654,13 @@ function gsb_feature_media_mention_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'taxonomy',
           'settings' => array(
             'conditions' => array(),
           ),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 11,
+          'weight' => '6',
         ),
         'featured' => array(
           'label' => 'above',
@@ -742,13 +745,13 @@ function gsb_feature_media_mention_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'link',
           'settings' => array(
             'conditions' => array(),
           ),
           'type' => 'link_default',
-          'weight' => 17,
+          'weight' => '1',
         ),
         'featured' => array(
           'label' => 'above',
@@ -775,9 +778,10 @@ function gsb_feature_media_mention_ct_field_default_fields() {
           'weight' => 0,
         ),
       ),
+      'ds_extras_field_template' => '',
       'entity_type' => 'node',
       'field_name' => 'field_link_single',
-      'label' => 'Source Publication',
+      'label' => 'Article Link',
       'required' => 1,
       'settings' => array(
         'attributes' => array(
@@ -795,9 +799,9 @@ function gsb_feature_media_mention_ct_field_default_fields() {
           'enable' => 0,
           'insert_plugin' => '',
         ),
-        'title' => 'required',
+        'title' => 'value',
         'title_maxlength' => '128',
-        'title_value' => '',
+        'title_value' => '[current-page:title]',
         'url' => 0,
         'user_register_form' => FALSE,
         'validate_url' => 1,
@@ -810,6 +814,103 @@ function gsb_feature_media_mention_ct_field_default_fields() {
         ),
         'type' => 'link_field',
         'weight' => '3',
+      ),
+      'workbench_access_field' => 0,
+    ),
+  );
+
+  // Exported field: 'node-media_mention-field_publisher'.
+  $fields['node-media_mention-field_publisher'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_publisher',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'text',
+      'settings' => array(
+        'max_length' => '255',
+      ),
+      'translatable' => '0',
+      'type' => 'text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'media_mention',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(
+            'conditions' => array(),
+          ),
+          'type' => 'text_default',
+          'weight' => '3',
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'tiny' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'ds_extras_field_template' => '',
+      'entity_type' => 'node',
+      'field_name' => 'field_publisher',
+      'label' => 'Publisher',
+      'required' => 1,
+      'settings' => array(
+        'linkit' => array(
+          'enable' => 0,
+          'insert_plugin' => '',
+        ),
+        'text_processing' => '0',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'maxlength_js' => 0,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'size' => '60',
+        ),
+        'type' => 'text_textfield',
+        'weight' => '4',
       ),
       'workbench_access_field' => 0,
     ),
@@ -856,13 +957,13 @@ function gsb_feature_media_mention_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'taxonomy',
           'settings' => array(
             'conditions' => array(),
           ),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 12,
+          'weight' => '7',
         ),
         'featured' => array(
           'label' => 'above',
@@ -951,13 +1052,13 @@ function gsb_feature_media_mention_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'taxonomy',
           'settings' => array(
             'conditions' => array(),
           ),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 16,
+          'weight' => '11',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1049,13 +1150,13 @@ function gsb_feature_media_mention_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'taxonomy',
           'settings' => array(
             'conditions' => array(),
           ),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 15,
+          'weight' => '10',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1082,19 +1183,19 @@ function gsb_feature_media_mention_ct_field_default_fields() {
           'weight' => 0,
         ),
       ),
+      'ds_extras_field_template' => '',
       'entity_type' => 'node',
       'field_name' => 'field_target_audience',
       'label' => 'Target Audience',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
       'widget' => array(
-        'active' => 0,
+        'active' => 1,
         'module' => 'hs_taxonomy',
         'settings' => array(
-          'autocomplete_path' => 'taxonomy/autocomplete',
-          'size' => 60,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         ),
         'type' => 'taxonomy_hs',
         'weight' => '17',
@@ -1105,6 +1206,7 @@ function gsb_feature_media_mention_ct_field_default_fields() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Article Link');
   t('Business Insight Topic');
   t('Company Organization');
   t('Date Published');
@@ -1112,8 +1214,8 @@ function gsb_feature_media_mention_ct_field_default_fields() {
   t('Editorial Summary');
   t('Image');
   t('Industry');
+  t('Publisher');
   t('Region');
-  t('Source Publication');
   t('Tag');
   t('Target Audience');
 

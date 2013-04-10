@@ -32,6 +32,7 @@ features[field][] = node-media_mention-field_editorial_summary
 features[field][] = node-media_mention-field_image_single_public
 features[field][] = node-media_mention-field_industry
 features[field][] = node-media_mention-field_link_single
+features[field][] = node-media_mention-field_publisher
 features[field][] = node-media_mention-field_region
 features[field][] = node-media_mention-field_tag
 features[field][] = node-media_mention-field_target_audience
