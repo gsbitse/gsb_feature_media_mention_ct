@@ -20,13 +20,13 @@ function gsb_feature_media_mention_ct_strongarm() {
         'custom_settings' => TRUE,
       ),
       'ical' => array(
-        'custom_settings' => TRUE,
+        'custom_settings' => FALSE,
       ),
       'tiny' => array(
-        'custom_settings' => TRUE,
+        'custom_settings' => FALSE,
       ),
       'featured' => array(
-        'custom_settings' => TRUE,
+        'custom_settings' => FALSE,
       ),
       'full' => array(
         'custom_settings' => FALSE,
@@ -44,6 +44,9 @@ function gsb_feature_media_mention_ct_strongarm() {
         'custom_settings' => FALSE,
       ),
       'revision' => array(
+        'custom_settings' => FALSE,
+      ),
+      'megamenu' => array(
         'custom_settings' => FALSE,
       ),
     ),
