@@ -53,11 +53,13 @@ function gsb_feature_media_mention_ct_ds_layout_settings_info() {
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'media_mention';
   $ds_layout->view_mode = 'teaser';
-  $ds_layout->layout = 'ds_1col';
+  $ds_layout->layout = 'ds_2col';
   $ds_layout->settings = array(
     'regions' => array(
-      'ds_content' => array(
+      'left' => array(
         0 => 'field_image_single_public',
+      ),
+      'right' => array(
         1 => 'group_content_wrapper',
         2 => 'field_region',
         3 => 'field_business_insight_topic',
@@ -67,31 +69,30 @@ function gsb_feature_media_mention_ct_ds_layout_settings_info() {
         7 => 'title',
         8 => 'field_discipline',
         9 => 'field_date_published',
-        10 => 'field_publisher',
-        11 => 'author',
-        12 => 'field_editorial_summary',
-        13 => 'group_tags_wrapper',
+        10 => 'author',
+        11 => 'field_editorial_summary',
+        12 => 'group_tags_wrapper',
       ),
     ),
     'fields' => array(
-      'field_image_single_public' => 'ds_content',
-      'group_content_wrapper' => 'ds_content',
-      'field_region' => 'ds_content',
-      'field_business_insight_topic' => 'ds_content',
-      'field_industry' => 'ds_content',
-      'field_tag' => 'ds_content',
-      'field_company_organization' => 'ds_content',
-      'title' => 'ds_content',
-      'field_discipline' => 'ds_content',
-      'field_date_published' => 'ds_content',
-      'field_publisher' => 'ds_content',
-      'author' => 'ds_content',
-      'field_editorial_summary' => 'ds_content',
-      'group_tags_wrapper' => 'ds_content',
+      'field_image_single_public' => 'left',
+      'group_content_wrapper' => 'right',
+      'field_region' => 'right',
+      'field_business_insight_topic' => 'right',
+      'field_industry' => 'right',
+      'field_tag' => 'right',
+      'field_company_organization' => 'right',
+      'title' => 'right',
+      'field_discipline' => 'right',
+      'field_date_published' => 'right',
+      'author' => 'right',
+      'field_editorial_summary' => 'right',
+      'group_tags_wrapper' => 'right',
     ),
     'classes' => array(),
     'wrappers' => array(
-      'ds_content' => 'div',
+      'left' => 'div',
+      'right' => 'div',
     ),
     'layout_wrapper' => 'div',
     'layout_attributes' => '',

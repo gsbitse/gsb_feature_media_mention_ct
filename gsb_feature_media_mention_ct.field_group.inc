@@ -25,10 +25,9 @@ function gsb_feature_media_mention_ct_field_group_info() {
     'children' => array(
       0 => 'field_date_published',
       1 => 'field_editorial_summary',
-      2 => 'field_publisher',
-      3 => 'title',
-      4 => 'author',
-      5 => 'group_tags_wrapper',
+      2 => 'title',
+      3 => 'author',
+      4 => 'group_tags_wrapper',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -66,16 +65,11 @@ function gsb_feature_media_mention_ct_field_group_info() {
       4 => 'field_region',
       5 => 'field_tag',
     ),
-    'format_type' => 'div',
+    'format_type' => 'gsb_field_formatter_group_comma_separator',
     'format_settings' => array(
       'label' => 'Tags:',
       'instance_settings' => array(
         'classes' => '',
-        'description' => '',
-        'show_label' => '1',
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'none',
       ),
       'formatter' => 'open',
     ),
