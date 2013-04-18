@@ -7,7 +7,6 @@ version = 7.x-1.0
 project = gsb_feature_media_mention_ct
 dependencies[] = ctools
 dependencies[] = date
-dependencies[] = defaultconfig
 dependencies[] = ds
 dependencies[] = entityreference
 dependencies[] = features
