@@ -13,6 +13,7 @@ dependencies[] = features
 dependencies[] = field_group
 dependencies[] = file_entity
 dependencies[] = gsb_feature_base_fields
+dependencies[] = gsb_field_formatter
 dependencies[] = hs_taxonomy
 dependencies[] = image
 dependencies[] = link

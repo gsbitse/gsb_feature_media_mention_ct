@@ -113,7 +113,7 @@ function gsb_feature_media_mention_ct_field_default_field_instances() {
           'taxonomy_term_separator' => ', ',
         ),
         'type' => 'ds_taxonomy_separator',
-        'weight' => 6,
+        'weight' => 8,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -180,7 +180,7 @@ function gsb_feature_media_mention_ct_field_default_field_instances() {
         'module' => 'date',
         'settings' => array(
           'conditions' => array(),
-          'format_type' => 'long',
+          'format_type' => 'medium',
           'fromto' => 'both',
           'multiple_from' => '',
           'multiple_number' => '',
@@ -188,7 +188,7 @@ function gsb_feature_media_mention_ct_field_default_field_instances() {
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 7,
+        'weight' => 3,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -264,7 +264,7 @@ function gsb_feature_media_mention_ct_field_default_field_instances() {
           'taxonomy_term_separator' => ', ',
         ),
         'type' => 'ds_taxonomy_separator',
-        'weight' => 7,
+        'weight' => 5,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -326,9 +326,10 @@ function gsb_feature_media_mention_ct_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(
           'conditions' => array(),
+          'trim_length' => 150,
         ),
-        'type' => 'text_default',
-        'weight' => 10,
+        'type' => 'text_trimmed',
+        'weight' => 4,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -397,12 +398,13 @@ function gsb_feature_media_mention_ct_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'file_entity',
+        'module' => 'image',
         'settings' => array(
           'conditions' => array(),
-          'file_view_mode' => 'default',
+          'image_link' => '',
+          'image_style' => '270x158',
         ),
-        'type' => 'file_rendered',
+        'type' => 'image',
         'weight' => 0,
       ),
       'tiny' => array(
@@ -478,7 +480,7 @@ function gsb_feature_media_mention_ct_field_default_field_instances() {
           'taxonomy_term_separator' => ', ',
         ),
         'type' => 'ds_taxonomy_separator',
-        'weight' => 4,
+        'weight' => 6,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -536,10 +538,13 @@ function gsb_feature_media_mention_ct_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 6,
+        'label' => 'hidden',
+        'module' => 'gsb_field_formatter',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'gsb_field_formatter_node_title_link',
+        'weight' => 1,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -620,7 +625,7 @@ function gsb_feature_media_mention_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 8,
+        'weight' => 11,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -693,7 +698,7 @@ function gsb_feature_media_mention_ct_field_default_field_instances() {
           'taxonomy_term_separator' => ', ',
         ),
         'type' => 'ds_taxonomy_separator',
-        'weight' => 2,
+        'weight' => 7,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -756,7 +761,7 @@ function gsb_feature_media_mention_ct_field_default_field_instances() {
           'taxonomy_term_separator' => ', ',
         ),
         'type' => 'ds_taxonomy_separator',
-        'weight' => 5,
+        'weight' => 9,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -814,10 +819,15 @@ function gsb_feature_media_mention_ct_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 7,
+        'label' => 'hidden',
+        'module' => 'ds',
+        'settings' => array(
+          'conditions' => array(),
+          'taxonomy_term_link' => TRUE,
+          'taxonomy_term_separator' => ', ',
+        ),
+        'type' => 'ds_taxonomy_separator',
+        'weight' => 4,
       ),
       'tiny' => array(
         'label' => 'above',

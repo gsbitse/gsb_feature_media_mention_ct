@@ -53,10 +53,10 @@ function gsb_feature_media_mention_ct_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'media_mention';
   $field_group->mode = 'teaser';
-  $field_group->parent_name = 'group_content_wrapper';
+  $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Tags:',
-    'weight' => '11',
+    'label' => '',
+    'weight' => '5',
     'children' => array(
       0 => 'field_business_insight_topic',
       1 => 'field_company_organization',
@@ -64,14 +64,13 @@ function gsb_feature_media_mention_ct_field_group_info() {
       3 => 'field_industry',
       4 => 'field_region',
       5 => 'field_tag',
+      6 => 'field_target_audience',
     ),
     'format_type' => 'gsb_field_formatter_group_comma_separator',
     'format_settings' => array(
-      'label' => 'Tags:',
+      'label' => '',
       'instance_settings' => array(
         'classes' => '',
-        'show_label' => '1',
-        'label_element' => 'h3',
       ),
       'formatter' => 'open',
     ),
