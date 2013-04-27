@@ -108,5 +108,12 @@ function gsb_feature_media_mention_ct_strongarm() {
   $strongarm->value = 0;
   $export['node_submitted_media_mention'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_media_mention_pattern';
+  $strongarm->value = 'media-mentions/[node:title]';
+  $export['pathauto_node_media_mention_pattern'] = $strongarm;
+
   return $export;
 }
