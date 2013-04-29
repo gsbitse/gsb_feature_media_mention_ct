@@ -378,7 +378,7 @@ function gsb_feature_media_mention_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => '270x158',
         ),
         'type' => 'image',
         'weight' => 0,
