@@ -86,7 +86,7 @@ function gsb_feature_media_mention_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Image wrapper',
-    'weight' => '1',
+    'weight' => '0',
     'children' => array(
       0 => 'field_image_single_public',
     ),

@@ -188,7 +188,7 @@ function gsb_feature_media_mention_ct_field_default_field_instances() {
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'tiny' => array(
         'label' => 'above',
