@@ -188,7 +188,7 @@ function gsb_feature_media_mention_ct_field_default_field_instances() {
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 4,
+        'weight' => 0,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -328,7 +328,7 @@ function gsb_feature_media_mention_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 5,
+        'weight' => 4,
       ),
       'tiny' => array(
         'label' => 'above',
