@@ -23,7 +23,7 @@ function gsb_feature_media_mention_ct_ds_field_settings_info() {
       'format' => 'default',
       'formatter_settings' => array(
         'link' => '0',
-        'wrapper' => 'h4',
+        'wrapper' => 'h2',
         'class' => '',
         'ft' => array(),
         'conditions' => array(),
