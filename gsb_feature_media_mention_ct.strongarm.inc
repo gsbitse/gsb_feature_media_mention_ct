@@ -64,6 +64,9 @@ function gsb_feature_media_mention_ct_strongarm() {
       'people_fpp' => array(
         'custom_settings' => FALSE,
       ),
+      'event_upcoming' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(

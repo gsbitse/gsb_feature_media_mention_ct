@@ -723,6 +723,62 @@ function gsb_feature_media_mention_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
+  // Exported field_instance: 'node-media_mention-field_search_field'
+  $field_instances['node-media_mention-field_search_field'] = array(
+    'bundle' => 'media_mention',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'concat_field',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'concat_field_blank',
+        'weight' => 12,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_search_field',
+    'label' => 'Search field',
+    'required' => 0,
+    'settings' => array(
+      'selected_fields' => array(
+        'field_business_insight_topic' => 'field_business_insight_topic',
+        'field_company_organization' => 'field_company_organization',
+        'field_date_published' => 'field_date_published',
+        'field_discipline' => 'field_discipline',
+        'field_editorial_summary' => 'field_editorial_summary',
+        'field_image_single_public' => 'field_image_single_public',
+        'field_industry' => 'field_industry',
+        'field_link_single' => 'field_link_single',
+        'field_publisher' => 'field_publisher',
+        'field_region' => 'field_region',
+        'field_tag' => 'field_tag',
+        'field_target_audience' => 'field_target_audience',
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'concat_field',
+      'settings' => array(
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+      ),
+      'type' => 'concat_field_default',
+      'weight' => 21,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'node-media_mention-field_tag'
   $field_instances['node-media_mention-field_tag'] = array(
     'bundle' => 'media_mention',
@@ -867,6 +923,7 @@ function gsb_feature_media_mention_ct_field_default_field_instances() {
   t('Industry');
   t('Publisher');
   t('Region');
+  t('Search field');
   t('Tag');
   t('Target Audience');
 
