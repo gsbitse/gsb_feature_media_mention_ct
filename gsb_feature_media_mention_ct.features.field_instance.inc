@@ -370,7 +370,7 @@ function gsb_feature_media_mention_ct_field_default_field_instances() {
   $field_instances['node-media_mention-field_image_single_public'] = array(
     'bundle' => 'media_mention',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Recommended size for uploaded images is 600x440.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -413,6 +413,7 @@ function gsb_feature_media_mention_ct_field_default_field_instances() {
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_image_single_public',
     'label' => 'Image',
@@ -922,6 +923,7 @@ function gsb_feature_media_mention_ct_field_default_field_instances() {
   t('Image');
   t('Industry');
   t('Publisher');
+  t('Recommended size for uploaded images is 600x440.');
   t('Region');
   t('Search field');
   t('Tag');
