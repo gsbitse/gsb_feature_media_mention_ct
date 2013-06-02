@@ -753,6 +753,7 @@ function gsb_feature_media_mention_ct_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'selected_fields' => array(
+        'concat_field_entity_label' => 'concat_field_entity_label',
         'field_business_insight_topic' => 'field_business_insight_topic',
         'field_company_organization' => 'field_company_organization',
         'field_date_published' => 'field_date_published',
